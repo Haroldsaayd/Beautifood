@@ -1,144 +1,163 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
 
 /* CSS General */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    background-color: #fff;
-    color: #555;
-    font-size: 20px;
-    font-weight: 300;
-    text-rendering: optimizeLegibility;
-    font-family: 'Lato', sans-serif;
+html {
+  background-color: #fff;
+  color: #555;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  font-family: "Lato", sans-serif;
+}
 
+h1,
+h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
-h1{
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 2.4rem;
-    letter-spacing: 1px;
-    word-spacing: 4px;
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 2.4rem;
+  word-spacing: 4px;
 }
-.fila{
-    max-width: 1140px;
-    margin: 0 auto;
-    
+
+h2 {
+  text-align: center;
+  word-spacing: 2px;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  text-align: justify;
 }
+h2:after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 180px;
+    margin: 30px auto 0;
+    background-color: #e67e22;
+}
+
+.fila {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 80px 0;
+}
+
 /* header */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(./img/hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    position: relative;
-  
-}
-.logoNav{
-    height: 150px;
-    width: auto;
-    float: left;
-    margin-top: 20px;
-}
-.enlacesNav{
-    float: right;
-    list-style: none;
-    margin-top: 55px;
-    
-}
-.enlacesNav li{
-    display: inline-block;
-    margin-left: 40px;
-    
-   
-}
-.enlacesNav li a,.enlacesNav li a:visited {
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: .9rem;
-    transition: all 0.3s;
-    padding: 8px 0 8px 0;
-    
-    
-}
-.enlacesNav li a:active,.enlacesNav li a:hover{
-border-bottom: #E67E22 2px solid;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
 }
 
-
-
-
-
-
-
-
-
-
-.textoHeader{
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-.boton,.boton:visited{
-    text-decoration: none;
-    display: inline-block;
-    font-weight: 300;
-    color: white;
-    padding: 10px 30px;
-    border-radius: 100px;
-    transition: all 0.3s;
-}
-.boton:hover,.boton:active{
-    background-color: #cf6d17;
-
-}
-.botonLleno,.botonLleno:visited{
-    background-color:#E67E22;
-    margin-right: 15px;
-
-}
-.botonVacio,.botonVacio:visited{
-    border: 2px solid #E67E22;
-    color: #E67E22;   
-
-}
-.botonVacio:hover,.botonVacio:active{
-    color: white;
+.logoNav {
+  height: 150px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
 }
 
+.enlacesNav {
+  float: right;
+  list-style: none;
+  margin-top: 55px;
+}
+
+.enlacesNav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.enlacesNav li a,
+.enlacesNav li a:visited {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+  padding: 8px 0 8px 0;
+}
+
+.enlacesNav li a:active,
+.enlacesNav li a:hover {
+  border-bottom: #e67e22 2px solid;
+}
+
+.textoHeader {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.boton,
+.boton:visited {
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 300;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+
+.boton:hover,
+.boton:active {
+  background-color: #cf6d17;
+}
+
+.botonLleno,
+.botonLleno:visited {
+  background-color: #e67e22;
+  margin-right: 15px;
+}
+
+.botonVacio,
+.botonVacio:visited {
+  border: 2px solid #e67e22;
+  color: #e67e22;
+}
+
+.botonVacio:hover,
+.botonVacio:active {
+  color: white;
+}
+
+/* Section Caracteristicas */
+
+
+
+.parrafoCaracteristicas{
+line-height: 1.45rem;
+width: 70%;
+margin: 0 auto ;
 
 
 
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.contenedorCaracteristicas {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+}
 

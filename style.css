@@ -43,6 +43,47 @@ header {
     position: relative;
   
 }
+.logoNav{
+    height: 150px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+.enlacesNav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+    
+}
+.enlacesNav li{
+    display: inline-block;
+    margin-left: 40px;
+    
+   
+}
+.enlacesNav li a,.enlacesNav li a:visited {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .9rem;
+    transition: all 0.3s;
+    padding: 8px 0 8px 0;
+    
+    
+}
+.enlacesNav li a:active,.enlacesNav li a:hover{
+border-bottom: #E67E22 2px solid;
+}
+
+
+
+
+
+
+
+
+
+
 .textoHeader{
     position: absolute;
     width: 1140px;
@@ -63,7 +104,7 @@ header {
     background-color: #cf6d17;
 
 }
-.botonLleno,.botoLleno:visited{
+.botonLleno,.botonLleno:visited{
     background-color:#E67E22;
     margin-right: 15px;
 

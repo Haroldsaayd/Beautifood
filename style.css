@@ -17,7 +17,7 @@ html {
 }
 
 h1,
-h2,h3 {
+h2,h3,h4 {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -36,7 +36,7 @@ h2 {
   word-spacing: 2px;
   font-size: 1.8rem;
   margin-bottom: 30px;
-  text-align: justify;
+  
 }
 h2:after{
     content: "";
@@ -56,7 +56,7 @@ h3{
 }
 
 section {
-  padding: 80px 0;
+  padding: 65px 0;
 }
 
 /* header */
@@ -144,8 +144,6 @@ header {
   color: white;
 }
 
-/* Section Caracteristicas */
-
 .parrafoCaracteristicas{
 line-height: 1.45rem;
 width: 70%;
@@ -153,7 +151,10 @@ margin: 0 auto ;
 margin-bottom: 35px;
 
 }
-
+/* Section Caracteristicas */
+.contenedorImagenesComida{
+  padding: 0px;
+}
 .contenedorCaracteristicas {
   display: grid;
   grid-gap: 15px;
@@ -174,7 +175,6 @@ margin-bottom: 35px;
 
  .imagenesComida{
    position: relative;
-   height: 90vh;
   
  }
  .platillosComida{
@@ -202,4 +202,183 @@ margin-bottom: 35px;
   opacity: 2.9;
   
  }
+/*seccion como funcionamos? */
+
+ .funcionamiento{
+   background-color: #ebebeb;
+   position: relative;
+ }
+ .contenedorInstrucciones{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   
+ }
+ .celular{
+  height: 420px;
+  margin: auto;
+ }
+.numeros{
+  margin-top: 50px;
+}
+.numero{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 6px;
+    font-size: 1.6rem;
+    float: left;
+    margin-right: 25px;
+}
+.instruccion{
+  font-size: 1rem;
+}
+.imagenesSimbolos img{
+  margin-top: 15px;
+  width: 160px;
+  height: 50px;
+}
+.simbolos{
+  margin-left: 15px;
+}
+/*SECCION CIUDADES */
+
+.ContenedorLugares{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin-top: 70px;
+}
+.ContenedorLugares h4{
+  font-size: 0.8rem;
+  
+}
+.ciudad{
+  width: 230px;
+  height: 150px;
+}
+
+.ciudades h3{
+  margin-top: 20px;
+}
+.icono{
+  color: #e67e22;
+  font-size: 1.2rem;
+  display: block;
+}
+
+/* SECCION RESEÑAS */
+.Reseñas{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(./img/back-customers.jpg);
+  background-position: fixed;
+}
+
+.reseñasPersonales{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.Reseñas h2{
+  color: #ebebeb;
+}
+.reseñasPersonales h3, .reseñasPersonales h4{
+ font-style: italic;
+ color: #ebebeb;
+ margin-left: 30px;
+ margin-right: 30px;
+}
+.reseñasPersonales h3{
+  font-size: 4rem;
+  
+}
+.reseñasPersonales h4{
+  font-size: 1.1rem;
+  text-transform: none;
+}
+.reseñaPersonal img{
+  margin-top: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+.reseñaPersonal h4{
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+/*SECCION PRECIOS*/
+
+.Precios{
+  background-color: #ebebeb;
+}
+.preciosCategoria{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  background-color:  #b2b2b2;
+  grid-gap: 30px;
+}
+.precio{
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.precio h4{
+  color: #ebebeb;
+}
+.precio h5{
+  margin-top: 5px;
+  color: #e67e22;
+  font-size: 1.8rem;
+}
+.precio h6{
+  margin-top: 5px;
+}
+.check{
+  color: #e67e22;
+  font-size: 1.2rem;
+  display: block;
+}
+.btnpreciolleno {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.btnprecioVacio{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*SECCION FORMULARIO */
+
+form{
+  text-align: center;
+  text-transform: none;
+}
+
+
+/*SECCION FOOTER */
+
+footer{
+  background-color:  #333;
+  padding: 50px;
+}
+.finalPagina h4{
+  color: #888;
+  font-size: 0.6rem;
+  display: inline-block;
+  margin-left: 20px;
+}
+.finalPagina h4:hover{
+  color: #ebebeb;
+  cursor: pointer;
+}
+.iconosFinal i{
+  color: #888;
+  float: right;
+  margin-right: 15px;
+}
+
+
+
+
+
 

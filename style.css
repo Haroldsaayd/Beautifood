@@ -194,6 +194,7 @@ margin-bottom: 35px;
    grid-gap: 0;
    margin-top: 0;
    opacity: 0.8;
+   cursor: pointer;
   
  }
  .imagenesPlatillo img:hover{
@@ -217,8 +218,15 @@ margin-bottom: 35px;
   height: 420px;
   margin: auto;
  }
+ .celular:hover{
+   height: 450px;
+   cursor: pointer;
+ }
 .numeros{
   margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  
 }
 .numero{
     color: #e67e22;
@@ -228,9 +236,9 @@ margin-bottom: 35px;
     border-radius: 50%;
     text-align: center;
     padding: 6px;
+    display: grid;
     font-size: 1.6rem;
-    float: left;
-    margin-right: 25px;
+    margin-right: 25px; 
 }
 .instruccion{
   font-size: 1rem;
@@ -259,6 +267,7 @@ margin-bottom: 35px;
   height: 150px;
 }
 
+
 .ciudades h3{
   margin-top: 20px;
 }
@@ -267,11 +276,20 @@ margin-bottom: 35px;
   font-size: 1.2rem;
   display: block;
 }
+.contactos{
+  display: grid;
+  grid-template-columns: auto 1fr;
+ margin-top: 10px;
+ margin-right: 10px;
+}
+.contactos h4{
+  margin-left: 10px;
+}
 
 /* SECCION RESEÑAS */
 .Reseñas{
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(./img/back-customers.jpg);
-  background-position: fixed;
+  background-attachment: fixed;
 }
 
 .reseñasPersonales{
@@ -300,11 +318,25 @@ margin-bottom: 35px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-left: 30px;
+  margin-left: 20px;
+}
+.reseñaPersonal img:hover{
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+
 }
 .reseñaPersonal h4{
-  display: inline-block;
   font-size: 0.9rem;
+}
+.personaReseña {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.personaReseña h4{
+  margin-top: auto;
+  margin-left: 5px;
 }
 
 /*SECCION PRECIOS*/
@@ -315,15 +347,45 @@ margin-bottom: 35px;
 .preciosCategoria{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  background-color:  #b2b2b2;
   grid-gap: 30px;
+  margin: 20px 40px;
+ 
 }
-.precio{
-  margin-left: 20px;
-  margin-top: 20px;
+.categoria{
+  background-color: #f7f7f7;
+  border-bottom: #555 1px solid;
+  min-height: 150px;
 }
+.categoria h4, h5, h6{
+  margin: 20px 30px;
+}
+.servicioComida{
+  margin: 0px 30px;
+}
+.comidas{
+  background-color: #fff;
+  border-bottom: #555 1px solid;
+  min-height: 200px;
+}
+.btnCentrado{
+  background-color: #f7f7f7;
+}
+.btnCentrado .btnpreciolleno  {
+  margin: 20px 60px;
+}
+.btnCentrado .btnprecioVacio{
+  margin: 20px 60px;
+}
+.servicioComida{
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.servicioComida h4{
+  margin-left: 15px;
+}
+
 .precio h4{
-  color: #ebebeb;
+  color: #5a5a5a;
 }
 .precio h5{
   margin-top: 5px;
@@ -346,6 +408,7 @@ margin-bottom: 35px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 
 /*SECCION FORMULARIO */
 
